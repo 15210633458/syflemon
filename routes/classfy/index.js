@@ -1,4 +1,4 @@
-var mongodb = require('mymongo1610')
+var mongodb = require('mymongo1610');
 
 //获取icon图标
 function icon(req, res, next) {
