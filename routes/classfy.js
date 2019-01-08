@@ -14,5 +14,5 @@ router.get('/api/icon', classfy.icon);
 router.get('/api/findType', classfy.findType)
 
 //添加分类
-router.get('/api/addType', classfy.addType)
+router.post('/api/addType', classfy.addType)
 module.exports = router;
