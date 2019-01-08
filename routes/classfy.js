@@ -1,29 +1,13 @@
 var express = require('express');
 var router = express.Router();
+var classfy = require('./classfy/index.js');
+//console.log(classfy)
+
 
 /* GET home page. */
+
 //加载icon图标
-// router.get('/api/icon', function(req, res, next) {
-//     mongodb.getmongodb("icon", function(err, con, coll) {
-//         if (err) {
-//             res.json({ code: 0, mes: err })
-//         } else {
-//             coll.find().toArray(function(error, result) {
-//                 if (error) {
-//                     res.json({
-//                         code: 0,
-//                         mes: error
-//                     })
-//                 } else {
-//                     res.json({
-//                         code: 1,
-//                         data: result
-//                     })
-//                 }
-//             })
-//         }
-//     })
-// });
+router.get('/api/icon', classfy.icon);
 
 // //添加分类
 // //查询分类
